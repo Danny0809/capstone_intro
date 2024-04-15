@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_nav"
+    app:startDestination="@id/introSplashFragment">
+
+    <fragment
+        android:id="@+id/introSplashFragment"
+        android:name="com.example.teston0412.Intro.IntroSplashFragment"
+        android:label="fragment_intro_splash"
+        tools:layout="@layout/fragment_intro_splash" >
+        <action
+            android:id="@+id/action_introSplashFragment_to_introViewPagerFragment"
+            app:destination="@id/introViewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introViewPagerFragment"
+        android:name="com.example.teston0412.Intro.IntroViewPagerFragment"
+        android:label="IntroViewPagerFragment" />
+</navigation>
